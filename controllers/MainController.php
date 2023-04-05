@@ -40,8 +40,20 @@ class MainController extends Authentication{
         switch ($this->params[0]) {
             case 'login':
                 $this->controller = new login();
+            break;
+            default:
+            break;
+        }
+    }
+
+    public function loadView($type = 'normal'){
+        switch ($view) {
+            case "normal":
+                # code...
                 break;
-            
+            case "login":
+                
+                break;
             default:
                 # code...
                 break;
